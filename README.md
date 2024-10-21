@@ -1,0 +1,1 @@
+Pequeño proyecto para poner en practicas los conocimientos de POO, Utilizando PHP, MySQL y Boostrap

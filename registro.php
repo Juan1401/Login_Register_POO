@@ -32,7 +32,8 @@
           </div>
           <div class="card-body p-4 p-sm-5">
             <h5 class="card-title text-center mb-5 fw-light fs-5">Registrarse</h5>
-            <form action="" method="post">
+            
+            <form action="servidor/registro/registrar.php" method="post">
 
               <div class="form-floating mb-3">
                 <input type="text" class="form-control" id="usuario" name="usuario" placeholder="myusername" required autofocus>
@@ -48,7 +49,7 @@
 
               <div class="form-floating mb-3">
                 <input type="password" class="form-control" id="password" name="password" placeholder="password">
-                <label for="password">Constraseña</label>
+                <label for="password">Contraseña</label>
               </div>
 
               <div class="d-grid mb-2">

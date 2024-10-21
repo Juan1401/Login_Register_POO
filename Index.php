@@ -52,7 +52,7 @@
                                         <button class="btn btn-lg btn-primary btn-login text-uppercase fw-bold mb-2"
                                             type="submit">Ingresar</button>
                                         <div class="text-center">
-                                            <a class="small" href="#">Forgot password?</a>
+                                            <a class="small" href="registro.php">Registrarse</a>
                                         </div>
                                     </div>
 

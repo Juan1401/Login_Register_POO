@@ -32,30 +32,30 @@
           </div>
           <div class="card-body p-4 p-sm-5">
             <h5 class="card-title text-center mb-5 fw-light fs-5">Registrarse</h5>
-            <form>
+            <form action="" method="post">
 
               <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingInputUsername" placeholder="myusername" required autofocus>
-                <label for="floatingInputUsername">Usuario</label>
+                <input type="text" class="form-control" id="usuario" name="usuario" placeholder="myusername" required autofocus>
+                <label for="usuario">Usuario</label>
               </div>
 
               <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInputEmail" placeholder="name@example.com">
+                <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
                 <label for="floatingInputEmail">Email</label>
               </div>
 
               <hr>
 
               <div class="form-floating mb-3">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                <label for="floatingPassword">Constraseña</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="password">
+                <label for="password">Constraseña</label>
               </div>
 
               <div class="d-grid mb-2">
                 <button class="btn btn-lg btn-primary btn-login fw-bold text-uppercase" type="submit">Registrar</button>
               </div>
 
-              <a class="d-block text-center mt-2 small" href="#">Si tienes una cuenata, Entra</a>
+              <a class="d-block text-center mt-2 small" href="Index.php">Si ya tienes una cuenta, Ingresa aqui!</a>
 
             </form>
           </div>

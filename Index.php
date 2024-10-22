@@ -28,34 +28,29 @@
                                 <h3 class="login-heading mb-4">Login de Usuario</h3>
 
                                 <!-- Sign In Form -->
-                                <form>
+                                <form action="servidor/login/logear.php" method="POST">
                                     <div class="form-floating mb-3">
-                                        <input type="text" class="form-control" id="Usuario" name="Usuario" 
-                                            placeholder="Ingresa tu usuario">
-                                        <label for="Usuario">Usuario</label>
+                                        <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Ingresa tu usuario">
+                                        <label for="usuario">Usuario</label>
                                     </div>
                                     <div class="form-floating mb-3">
-                                        <input type="password" class="form-control" id="floatingPassword" name="password"
-                                            placeholder="Contraseña">
-                                        <label for="floatingPassword">Contraseña</label>
+                                        <input type="password" class="form-control" id="password" name="password" placeholder="Contraseña">
+                                        <label for="password">Contraseña</label>
                                     </div>
 
                                     <div class="form-check mb-3">
-                                        <input class="form-check-input" type="checkbox" value=""
-                                            id="rememberPasswordCheck">
+                                        <input class="form-check-input" type="checkbox" value="recordar" id="rememberPasswordCheck">
                                         <label class="form-check-label" for="rememberPasswordCheck">
                                             Recordar Contraseña
                                         </label>
                                     </div>
 
                                     <div class="d-grid">
-                                        <button class="btn btn-lg btn-primary btn-login text-uppercase fw-bold mb-2"
-                                            type="submit">Ingresar</button>
+                                        <button class="btn btn-lg btn-primary btn-login text-uppercase fw-bold mb-2" type="submit">Ingresar</button>
                                         <div class="text-center">
                                             <a class="small" href="registro.php">Registrarse</a>
                                         </div>
                                     </div>
-
                                 </form>
                             </div>
                         </div>

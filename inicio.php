@@ -1,3 +1,12 @@
+<?php session_start();
+//VALIDANDO LA URL
+    if(!isset($_SESSION['usuario']))
+    {
+        header("location:index.php");
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,15 +45,14 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
-                        Productos
+                        <?php echo $_SESSION['usuario']; ?> 
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="servidor/login/logoout.php">Salir del sistema</a></li>
                         <li>
-                            <hr class="dropdown-divider">
+                            <!-- <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li> -->
                     </ul>
                 </li>
             </ul>
